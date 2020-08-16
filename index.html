@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths</title>
+    <link rel="styleSheet" href="./neo.css" />
+    <link rel="styleSheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div style="padding: 10px;">
+      <a href="index.html" style="font-size: 30px; padding: 5px;">Math</a>
+
+      <a href="tables.html" style="font-size: 20px; padding: 5px;">Tables</a>
+      <a href="fraction.html" style="font-size: 20px; padding: 5px;"
+        >Fraction</a
+      >
+    </div>
+    <div id="screen2">
+      <div>
+        <h1>MATH WORLD</h1>
+      </div>
+      <div class="container neo-inside" id="mainSection">
+        <!-- <div id="timmerstyl" class="neo-outline">
+          <div id="timmer"></div>
+        </div> -->
+
+        <div class="neo-outside Mathbox" id="matha"></div>
+        <div class="neo-outside Mathbox" id="mathoperatoe"></div>
+        <div class="neo-outside Mathbox" id="mathb"></div>
+        <div class="neo-outside Mathbox">=</div>
+        <input
+          type="number"
+          id="mathans"
+          class="neo-outside Mathbox"
+          value=""
+          placeholder="Type answer"
+        />
+        <input type="hidden" id="correctMathAns" />
+        <input
+          type="button"
+          id=" Mathbox"
+          class="neo-button butsub"
+          value="check"
+          tabindex="1"
+          onclick="mathcheck()"
+        />
+        <div id="checkdiv">
+          <img src="./questionMark.png" id="checkAnsIcon" alt="icon" />
+        </div>
+        <script src="./parentsSet.js"></script>
+        <script src="./main.js"></script>
+      </div>
+    </div>
+
+    <div id="screen3">
+      <p>Start again</p>
+      <button onclick="location.reload();">Click</button>
+    </div>
+  </body>
+</html>

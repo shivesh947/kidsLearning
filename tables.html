@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      .toffee {
+        height: 30px;
+        transform: rotate(-50deg);
+      }
+      .editstyletoffee {
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body style="background: lightgrey; font-size: 30px; padding: 0; margin: 0;">
+    <div style="padding: 10px;">
+      <a href="tables.html" style="font-size: 30px; padding: 5px;">Tables</a>
+      <a href="fraction.html" style="font-size: 20px; padding: 5px;"
+        >Fraction</a
+      >
+      <a href="index.html" style="font-size: 20px; padding: 5px;">Math</a>
+    </div>
+    <div>
+      <section>
+        <div style="padding: 10px 10px 10px 2px; background: beige;">
+          Enter Number :
+          <input
+            type="number"
+            value="2"
+            onkeyup="tableget(this.value)"
+            style="width: 40px; font-size: 20px;"
+            id="inputNum"
+          />
+        </div>
+        <div id="tablesShows" style="padding-left: 10px;"></div>
+      </section>
+      <div id="tableNtoffee" style="padding-top: 40px;"></div>
+    </div>
+    <section style="margin-bottom: 30px;">
+      <div>
+        <h5>How Table create</h5>
+        <div style="padding-left: 20px;">
+          Calculate :
+
+          <input
+            type="number"
+            value="1"
+            id="aValue"
+            onkeyup="validateInput('aValue')"
+            style="font-size: 20px; width: 40px;"
+          />
+          <span style="vertical-align: sub;">*</span>
+          <input
+            type="number"
+            value="1"
+            id="bValue"
+            onkeyup="validateInput('bValue')"
+            style="font-size: 20px; width: 40px;"
+          />
+          <input
+            type="button"
+            onclick="toffeeCalculate(document.getElementById('aValue').value,document.getElementById('bValue').value)"
+            value="="
+          />
+          <div
+            id="toffeeCalculate"
+            style="text-align: center; line-height: 2;"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./parentsSet.js"></script>
+
+    <script src="table.js"></script>
+  </body>
+</html>

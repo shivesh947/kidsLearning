@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: #d4d4d4;
+}
+.container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* height: 90vh; */
+  background-color: #d4d4d4;
+  padding: 10px;
+}
+.Mathbox {
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  padding: 6px;
+  margin-left: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+.butsub {
+  width: 86px;
+  height: 86px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 10px;
+}
+
+#mathans:hover {
+  background-color: #ebebeb;
+}
+
+#timmerstyl {
+  position: absolute;
+  margin-top: -25%;
+  font-size: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+#timmerstyl::after {
+  height: 100px;
+  width: 100px;
+}
+
+#checkdiv {
+  position: absolute;
+  margin-top: 20%;
+  font-size: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+#checkAnsIcon {
+  height: 100px;
+  width: 100px;
+}
+
+#screen3 {
+  display: none;
+  margin-top: 45vh;
+  transform: translate(0px, -50%);
+  text-align: center;
+  font-size: 40px;
+  line-height: 0px;
+}
+#screen3 button {
+  height: 40px;
+  width: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainSection {
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+  .Mathbox {
+    height: 50px;
+    width: 52px;
+    font-size: 26px;
+    margin: 7px;
+  }
+  .butsub {
+    margin: 7px;
+  }
+  #checkdiv {
+    margin-top: 100%;
+  }
+}
