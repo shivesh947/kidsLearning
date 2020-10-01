@@ -14,7 +14,7 @@ const mathsolver = () => {
   document.getElementById("mathans").value = "";
   document.getElementById("checkAnsIcon").src = "./questionMark.png";
 };
-
+//this function help to check answer is correct or not
 const mathcheck = () => {
   var x = document.getElementById("correctMathAns").value;
   var y = document.getElementById("mathans").value;
